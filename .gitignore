@@ -1,0 +1,47 @@
+# OS and editor files
+.DS_Store
+Thumbs.db
+Desktop.ini
+*.swp
+*.swo
+*.tmp
+*.temp
+
+# Environment and local secrets
+.env
+.env.*
+!.env.example
+*.local
+
+# Dependency and build output
+node_modules/
+dist/
+build/
+.cache/
+.parcel-cache/
+.vite/
+coverage/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Local-only workspace material
+/AGENTS.md
+/docs/
+/private/
+/internal/
+
+# Archives and generated packages
+*.zip
+*.tar
+*.tar.gz
+*.7z
+
+# Tistory upload scratch files
+/upload/
+/release/
+/tmp/
