@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<skin>
+  <information>
+    <name>Kernova Lab</name>
+    <version>0.1.0</version>
+    <description><![CDATA[Kernova Lab technical blog skin.]]></description>
+    <license>MIT License</license>
+  </information>
+  <author>
+    <name>Kernova Lab</name>
+    <homepage></homepage>
+    <email></email>
+  </author>
+  <liststyle>
+    <item>
+      <value>list</value>
+      <label>리스트</label>
+    </item>
+    <item>
+      <value>grid</value>
+      <label>그리드</label>
+    </item>
+    <item>
+      <value>gallery</value>
+      <label>갤러리</label>
+    </item>
+  </liststyle>
+  <cover>
+    <item>
+      <name>list</name>
+      <label>리스트</label>
+      <description>글 목록형 커버</description>
+    </item>
+    <item>
+      <name>grid</name>
+      <label>그리드</label>
+      <description>카드 그리드형 커버</description>
+    </item>
+    <item>
+      <name>gallery</name>
+      <label>갤러리</label>
+      <description>이미지 중심 커버</description>
+    </item>
+  </cover>
+  <variables>
+    <variablegroup name="브랜드">
+      <variable>
+        <name>github_url</name>
+        <label>GitHub URL</label>
+        <description><![CDATA[푸터와 프로필에 표시할 GitHub 주소입니다.]]></description>
+        <type>STRING</type>
+        <default></default>
+      </variable>
+      <variable>
+        <name>contact_email</name>
+        <label>Contact Email</label>
+        <description><![CDATA[연락 이메일입니다. 비워두면 표시하지 않습니다.]]></description>
+        <type>STRING</type>
+        <default></default>
+      </variable>
+      <variable>
+        <name>footer_text</name>
+        <label>Footer Text</label>
+        <description><![CDATA[푸터 하단 문구입니다.]]></description>
+        <type>STRING</type>
+        <default>Research, engineering, and product notes.</default>
+      </variable>
+    </variablegroup>
+    <variablegroup name="레이아웃">
+      <variable>
+        <name>toc</name>
+        <label>글 목차 표시</label>
+        <description><![CDATA[글 상세 페이지에 목차를 표시합니다.]]></description>
+        <type>BOOL</type>
+        <default>true</default>
+      </variable>
+      <variable>
+        <name>scrollspy</name>
+        <label>목차 현재 위치 표시</label>
+        <description><![CDATA[스크롤 위치에 따라 목차 항목을 강조합니다.]]></description>
+        <type>BOOL</type>
+        <default>true</default>
+      </variable>
+      <variable>
+        <name>theme_mode</name>
+        <label>기본 테마</label>
+        <description><![CDATA[system, dark, light 중 하나를 입력합니다.]]></description>
+        <type>STRING</type>
+        <default>dark</default>
+      </variable>
+    </variablegroup>
+    <variablegroup name="수익화">
+      <variable>
+        <name>ad_article_top</name>
+        <label>글 상단 광고 슬롯</label>
+        <description><![CDATA[글 제목 아래 광고 예약 영역을 표시합니다.]]></description>
+        <type>BOOL</type>
+        <default>true</default>
+      </variable>
+      <variable>
+        <name>ad_article_middle</name>
+        <label>글 중간 광고 슬롯</label>
+        <description><![CDATA[본문 중간 광고 예약 영역을 표시합니다.]]></description>
+        <type>BOOL</type>
+        <default>false</default>
+      </variable>
+      <variable>
+        <name>ad_article_bottom</name>
+        <label>글 하단 광고 슬롯</label>
+        <description><![CDATA[본문 하단 광고 예약 영역을 표시합니다.]]></description>
+        <type>BOOL</type>
+        <default>true</default>
+      </variable>
+      <variable>
+        <name>ad_sidebar</name>
+        <label>사이드바 광고 슬롯</label>
+        <description><![CDATA[데스크톱 사이드바 광고 예약 영역을 표시합니다.]]></description>
+        <type>BOOL</type>
+        <default>false</default>
+      </variable>
+    </variablegroup>
+  </variables>
+  <default>
+    <liststyle>grid</liststyle>
+    <recentEntries>5</recentEntries>
+    <recentComments>5</recentComments>
+    <recentTrackbacks>5</recentTrackbacks>
+    <itemsOnIndex>10</itemsOnIndex>
+    <itemsOnTag>10</itemsOnTag>
+    <itemsOnCategory>10</itemsOnCategory>
+    <itemsOnGuestbook>10</itemsOnGuestbook>
+  </default>
+</skin>
